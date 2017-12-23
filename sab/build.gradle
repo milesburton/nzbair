@@ -1,0 +1,53 @@
+apply plugin: 'android'
+apply plugin: 'maven'
+apply plugin: 'idea'
+apply plugin: 'eclipse'
+
+group = 'com.mb.android.nzbair.sabnzb'
+artifactId = 'sabnzbd'
+//version = "1.0.${new Date().format('yyMMdd.HHmm')}"
+version = "1.0-SNAPSHOT"
+
+sourceCompatibility = 1.6
+targetCompatibility = 1.6
+
+repositories {
+	mavenCentral()
+	mavenRepo(url: 'http://build.mnetcs.com:8081/artifactory/android-snapshot')
+
+	maven {
+		credentials {
+			username "nzbair" 
+		        password "HPcvygxq" 
+		}
+
+		url "http://build.mnetcs.com:8081/artifactory/nzbair-snapshot"
+	}
+}
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'org.gradle.api.plugins:gradle-android-plugin:1.1.0'
+    }
+}
+
+dependencies {
+	compile 'com.google.android:android:2.1.2',
+		'com.mb.android.nzbair.remote:remote:1.0-SNAPSHOT'
+}
+
+repositories {
+    mavenCentral()
+}
+
+uploadArchives {
+	repositories.mavenDeployer {
+		name = 'httpDeployer'
+		repository(url: "http://build.mnetcs.com:8081/artifactory/nzbair-snapshot") {
+			authentication(userName: System.properties['artifactoryUserName'], password: System.properties['artifactoryPassword'])
+		}
+		pom.artifactId = artifactId
+	}
+}

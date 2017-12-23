@@ -1,0 +1,30 @@
+apply plugin: 'android'
+apply plugin: 'maven'
+apply plugin: 'idea'
+apply plugin: 'eclipse'
+
+group = 'com.mb.android.nzbair.remote'
+artifactId = 'remote'
+//version = "1.0.${new Date().format('yyMMdd.HHmm')}"
+version = "1.0-SNAPSHOT"
+
+sourceCompatibility = 1.6
+targetCompatibility = 1.6
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'org.gradle.api.plugins:gradle-android-plugin:1.1.0'
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+	compile 'com.google.android:android:2.1.2'
+	compile 'org.codehaus.jackson:jackson-jaxrs:1.9.3'
+}

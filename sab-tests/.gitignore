@@ -1,0 +1,17 @@
+asses/**
+bin/**
+target/**
+out/**
+build/**
+gen/**
+.gradle/**
+*.iml
+*.ipr
+*.iws
+*.log
+*.war
+*.idea
+*.project
+*.classpath
+*.settings
+

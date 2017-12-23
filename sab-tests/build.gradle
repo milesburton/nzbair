@@ -1,0 +1,47 @@
+apply plugin: 'java'
+apply plugin: 'groovy'
+apply plugin: 'idea'
+apply plugin: 'eclipse'
+
+sourceCompatibility = 1.6
+version = '1.0'
+
+repositories {
+	mavenCentral()
+	maven {
+		credentials {
+			username "nzbair" 
+			password "HPcvygxq" 
+		}
+
+		url "http://build.mnetcs.com:8081/artifactory/nzbair-snapshot"	
+	}
+
+	mavenRepo(url: 'http://build.mnetcs.com:8081/artifactory/android-snapshot')
+}
+
+dependencies {
+   	groovy("org.codehaus.groovy:groovy-all:1.7.5")
+
+	compile 'com.google.android:android:2.1.2',
+		'com.mb.android.nzbair.sabnzb:sabnzbd:1.0-SNAPSHOT'
+
+	testCompile 	"org.spockframework:spock-core:0.5-groovy-1.7",
+			"junit:junit:4.10",
+			"org.mockito:mockito-all:1.9.0-rc1",
+			"org.powermock:powermock-module-junit4:1.4.10",
+			"org.powermock:powermock-api-mockito:1.4.10",
+	 		'javassist:javassist:3.8.0.GA'
+
+	testCompile('org.json:json:20090211') {
+			exclude group: 'org.json'
+		}
+}
+
+/* The test script helpers */
+test {
+    beforeTest { descriptor ->
+        logger.lifecycle("Running test: " + descriptor)
+    }
+}
+
