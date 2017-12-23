@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:id="@id/action_settings" android:title="@string/settings_label"
+		android:icon="@android:drawable/ic_menu_preferences" android:showAsAction="ifRoom|withText" />
+	<item android:id="@id/action_refresh" android:title="@string/refresh_label"
+		android:icon="@android:drawable/ic_menu_rotate" android:showAsAction="always|withText" />
+	<item android:id="@id/action_search" android:title="@string/search_label"
+		android:icon="@android:drawable/ic_menu_search" android:showAsAction="always|withText" android:actionViewClass="android.widget.SearchView" />
+</menu>

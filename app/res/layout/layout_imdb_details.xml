@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<LinearLayout android:layout_height="wrap_content"
+		android:orientation="vertical" android:layout_width="fill_parent"
+		android:padding="10dip">
+		<TextView android:id="@id/name" android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:text=""
+			android:textStyle="bold" android:textSize="15px">
+		</TextView>
+		<TableLayout android:layout_height="wrap_content"
+			android:stretchColumns="1" android:orientation="horizontal"
+			android:layout_width="wrap_content" android:layout_gravity="center_horizontal"
+			android:paddingTop="5dip" android:paddingBottom="5dip" android:paddingRight="5dip">
+			<!--  Rating -->
+			<TableRow android:id="@id/RatingRow">
+				<TextView android:text="Rating: " android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:textStyle="bold">
+				</TextView>
+				<TextView android:id="@id/Rating" android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:layout_weight="1"></TextView>
+			</TableRow>
+			<!--  /Rating -->
+
+			<!--  Votes -->
+			<TableRow android:id="@id/VotesRow">
+				<TextView android:text="Votes: " android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:textStyle="bold">
+				</TextView>
+				<TextView android:id="@id/Votes" android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:layout_weight="1"></TextView>
+			</TableRow>
+			<!--  /Votes -->
+
+			<!--  Plot -->
+			<TableRow android:id="@id/PlotRow">
+				<TextView android:text="Plot: " android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:textStyle="bold">
+				</TextView>
+				<TextView android:id="@id/Plot" android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:text="" android:layout_weight="1"></TextView>
+			</TableRow>
+			<!--  /Plot -->
+
+			<!--  Rated -->
+			<TableRow android:id="@id/RatedRow">
+				<TextView android:text="Rated: " android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:textStyle="bold">
+				</TextView>
+				<TextView android:id="@id/Rated" android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:layout_weight="1"></TextView>
+			</TableRow>
+			<!--  /Rated -->
+
+			<!--  Runtime -->
+			<TableRow android:id="@id/RuntimeRow">
+				<TextView android:text="Runtime: " android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:textStyle="bold">
+				</TextView>
+				<TextView android:id="@id/Runtime" android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:layout_weight="1"></TextView>
+			</TableRow>
+			<!--  /Runtime -->
+
+			<!--  Year -->
+			<TableRow android:id="@id/yearRow">
+				<TextView android:text="Year: " android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:textStyle="bold">
+				</TextView>
+				<TextView android:id="@id/year" android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:layout_weight="1"></TextView>
+			</TableRow>
+			<!--  /Year -->
+
+			<!--  Director -->
+			<TableRow android:id="@id/DirectorRow">
+				<TextView android:text="Director: " android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:textStyle="bold">
+				</TextView>
+				<TextView android:id="@id/Director" android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:layout_weight="1"></TextView>
+			</TableRow>
+			<!--  /Director -->
+
+			<!--  Writer -->
+			<TableRow android:id="@id/WriterRow">
+				<TextView android:text="Writer: " android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:textStyle="bold">
+				</TextView>
+				<TextView android:id="@id/Writer" android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:layout_weight="1"></TextView>
+			</TableRow>
+			<!--  /Writer -->
+
+			<!--  Actors -->
+			<TableRow android:id="@id/ActorsRow">
+				<TextView android:text="Actors: " android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:textStyle="bold">
+				</TextView>
+				<TextView android:id="@id/Actors" android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:layout_weight="1"></TextView>
+			</TableRow>
+			<!--  /Actors -->
+			<!--  Link -->
+			<TableRow android:id="@id/LinkRow">
+				<TextView android:text="Link: " android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:textStyle="bold">
+				</TextView>
+				<TextView android:id="@id/Link" android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:layout_weight="1"></TextView>
+			</TableRow>
+			<!--  /Link -->
+
+
+
+
+
+
+
+		</TableLayout>
+		<ImageView android:id="@id/image" android:layout_width="fill_parent"
+			android:scaleType="fitXY" android:layout_gravity="center_horizontal" android:layout_height="fill_parent">
+		</ImageView>
+	</LinearLayout>
+
+</ScrollView>

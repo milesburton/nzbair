@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="title" type="id"/>
+    <item name="summary" type="id"/>
+    <item name="icon" type="id"/>
+    <item name="footer" type="id"/>
+
+    <!-- Widget -->
+    <item name="sab_widget" type="id"/>
+
+    <!-- IMDB Details -->
+    <item name="name" type="id"/>
+    <item name="RatingRow" type="id"/>
+    <item name="Rating" type="id"/>
+    <item name="VotesRow" type="id"/>
+    <item name="Votes" type="id"/>
+    <item name="PlotRow" type="id"/>
+    <item name="Plot" type="id"/>
+    <item name="RatedRow" type="id"/>
+    <item name="Rated" type="id"/>
+    <item name="yearRow" type="id"/>
+    <item name="year" type="id"/>
+    <item name="DirectorRow" type="id"/>
+    <item name="Director" type="id"/>
+    <item name="WriterRow" type="id"/>
+    <item name="Writer" type="id"/>
+    <item name="ActorsRow" type="id"/>
+    <item name="Actors" type="id"/>
+    <item name="LinkRow" type="id"/>
+    <item name="Link" type="id"/>
+    <item name="RuntimeRow" type="id"/>
+    <item name="Runtime" type="id"/>
+    <item name="image" type="id"/>
+
+    <!-- Sab details -->
+    <item name="nzbQueueActive" type="id"/>
+    <item name="nzbQueueComplete" type="id"/>
+    <item name="nzbProgressTotal" type="id"/>
+    <item name="nzbProgressComplete" type="id"/>
+    <item name="progress" type="id"/>
+    <item name="nzbEta" type="id"/>
+    <item name="nzbState" type="id"/>
+    <item name="nzbSpeed" type="id"/>
+    <item name="nzbLoad" type="id"/>
+    <item name="nzbUptime" type="id"/>
+    <item name="diskspace1" type="id"/>
+    <item name="nzbDiskspace1" type="id"/>
+    <item name="nzbDiskspace2" type="id"/>
+    <item name="diskspace2" type="id"/>
+    <item name="nzbWarnings" type="id"/>
+
+    <!-- Widget -->
+    <item name="currentdownload" type="id"/>
+    <item name="status" type="id"/>
+
+    <!-- Loading footer -->
+    <item name="ProgressBar01" type="id"/>
+    <item name="loadingfooter" type="id"/>
+
+    <!-- Favourites row -->
+    <item name="row_favourite" type="id"/>
+    <item name="size" type="id"/>
+    <item name="DeleteItem" type="id"/>
+
+    <!-- Row history -->
+    <item name="GenericDownloadRow" type="id"/>
+    <item name="DownloadTitle" type="id"/>
+    <item name="UpdateStatusText" type="id"/>
+    <item name="UpdateSize" type="id"/>
+
+    <!-- key value row -->
+    <item name="key" type="id"/>
+    <item name="value" type="id"/>
+
+    <!-- Pending download row -->
+    <item name="UpdateTimeLeft" type="id"/>
+    <item name="UpdatePriority" type="id"/>
+    <item name="UpdateProgress" type="id"/>
+
+    <!-- listview section header -->
+    <item name="list_header_title" type="id"/>
+
+    <!-- Menu -->
+    <item name="action_settings" type="id"/>
+    <item name="action_refresh" type="id"/>
+    <item name="action_search" type="id"/>
+    <item name="action_search" type="id"/>
+    <item name="action_switch_default_provider" type="id"/>
+
+    <!-- local downloads -->
+    <item name="action_retry" type="id"/>
+    <item name="action_clear_complete" type="id"/>
+
+    <!-- Activity details -->
+    <item name="indicator" type="id"/>
+    <item name="headerContainer" type="id"/>
+    <item name="pager" type="id"/>
+    <item name="buttonContainer" type="id"/>
+    <item name="indicator" type="id"/>
+    <item name="buttonContainer" type="id"/>
+    <item name="postBookmarkCol" type="id"/>
+    <item name="bookmarkButton" type="id"/>
+    <item name="postDownloadCol" type="id"/>
+    <item name="downloadButton" type="id"/>
+    <item name="postSABNzbCol" type="id"/>
+    <item name="sabnzbButton" type="id"/>
+    <!-- Fragments -->
+
+    <item name="fragment_browse_category" type="id"/>
+    <item name="fragment_browse_posts" type="id"/>
+    <item name="fragment_browse_saved" type="id"/>
+    <item name="fragment_favourites" type="id"/>
+    <item name="fragment_main_menu" type="id"/>
+    <item name="fragment_search_posts" type="id"/>
+    <item name="webview" type="id"/>
+
+    <!-- Fragment post image -->
+    <item name="image_post" type="id"/>
+
+    <!-- OTS -->
+    <item name="code" type="id"/>
+    <item name="pin" type="id"/>
+    <item name="getSettings" type="id"/>
+
+</resources>

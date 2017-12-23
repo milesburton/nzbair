@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="294dip" android:layout_height="72dip"
+	android:orientation="vertical" android:background="@drawable/widget_border"
+	android:id="@id/sab_widget">
+	<!-- Container -->
+	<LinearLayout android:layout_width="294dip"
+		android:layout_height="72dip" android:orientation="horizontal">
+		<LinearLayout android:layout_width="210dip"
+			android:layout_height="72dip" android:orientation="vertical">
+
+			<TextView android:id="@id/currentdownload"
+				android:layout_height="wrap_content" android:layout_width="fill_parent"
+				android:text="NZBAir Premium" android:textStyle="bold"
+				android:textColor="#FFF">
+			</TextView>
+			<TextView android:text="" android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:textStyle="bold"
+				android:id="@id/summary" android:textColor="#FFF">
+			</TextView>
+			<TextView android:text="" android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:textStyle="bold"
+				android:textColor="#FFF" android:id="@id/status">
+			</TextView>
+
+		</LinearLayout>
+		<!-- Buttons -->
+		<LinearLayout android:layout_width="64dip"
+			android:layout_height="72dip" android:orientation="vertical"
+			android:layout_weight="1">
+			<ImageButton android:background="@drawable/sabnzb"
+				android:id="@id/sabnzbButton" android:layout_height="60dip"
+				android:layout_width="60dip" android:layout_gravity="center_vertical"
+				android:scaleType="fitXY"></ImageButton>
+		</LinearLayout>
+		<!-- /Buttons -->
+	</LinearLayout>
+
+	<!-- /Container -->
+</LinearLayout>

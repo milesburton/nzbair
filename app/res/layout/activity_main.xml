@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<fragment
+		class="com.mb.android.nzbAirPremium.ui.fragments.MainMenuFragment"
+		android:id="@id/fragment_main_menu"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent" />
+</LinearLayout>
+

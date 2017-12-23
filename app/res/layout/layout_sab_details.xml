@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<TableLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<!-- Queue state -->
+		<TableRow android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+			<TextView android:text="Queue: " android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:textStyle="bold" />
+
+			<LinearLayout android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+				<TextView android:id="@id/nzbQueueActive"
+					android:layout_height="wrap_content" android:layout_width="wrap_content"
+					android:text="" />
+				<TextView android:text=" Complete:  "
+					android:layout_height="wrap_content" android:layout_width="wrap_content"
+					android:textStyle="bold" />
+
+				<TextView android:id="@id/nzbQueueComplete"
+					android:layout_height="wrap_content" android:layout_width="wrap_content"
+					android:text="" />
+			</LinearLayout>
+		</TableRow>
+		<!-- Queue Progress -->
+		<TableRow android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+			<TextView android:text="Progress: " android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:textStyle="bold" />
+
+			<LinearLayout android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+				<TextView android:id="@id/nzbProgressComplete"
+					android:layout_height="wrap_content" android:layout_width="wrap_content"
+					android:text="" />
+				<TextView android:text="/" android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:textStyle="bold" />
+
+				<TextView android:id="@id/nzbProgressTotal"
+					android:layout_height="wrap_content" android:layout_width="wrap_content"
+					android:text="" />
+			</LinearLayout>
+
+		</TableRow>
+		<!-- Progress row -->
+		<TableRow android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+			<TextView android:text=" " android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:textStyle="bold" />
+			<ProgressBar android:maxHeight="10dip"
+				android:indeterminateDrawable="@android:drawable/progress_indeterminate_horizontal"
+				android:layout_width="fill_parent" android:indeterminateOnly="false"
+				android:layout_height="10dip" android:minHeight="10dip" android:id="@id/progress"
+				android:progressDrawable="@android:drawable/progress_horizontal"></ProgressBar>
+		</TableRow>
+		<!-- Eta -->
+		<TableRow android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+			<TextView android:text="ETA " android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:textStyle="bold" />
+
+			<TextView android:id="@id/nzbEta" android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:text="" />
+		</TableRow>
+		<!-- State -->
+		<TableRow android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+			<TextView android:text="State: " android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:textStyle="bold" />
+
+			<TextView android:id="@id/nzbState" android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:text="Downloading" />
+		</TableRow>
+
+		<!-- Download Speed -->
+		<TableRow android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+			<TextView android:text="Speed: " android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:textStyle="bold" />
+
+			<TextView android:id="@id/nzbSpeed" android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:text="" />
+		</TableRow>
+		<!-- Load -->
+		<TableRow android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+			<TextView android:text="Load: " android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:textStyle="bold" />
+
+			<TextView android:id="@id/nzbLoad" android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:text="" />
+		</TableRow>
+		<!-- Uptime -->
+		<TableRow android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+			<TextView android:text="Uptime: " android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:textStyle="bold" />
+
+			<TextView android:id="@id/nzbUptime" android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:text="" />
+		</TableRow>
+		<!-- Disk space progress bars -->
+		<TableRow android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+			<TextView android:text="Disk 1" android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:textStyle="bold" />
+
+			<LinearLayout android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+
+				<ProgressBar android:maxHeight="10dip"
+					android:indeterminateDrawable="@android:drawable/progress_indeterminate_horizontal"
+					android:layout_width="120dip" android:indeterminateOnly="false"
+					android:layout_height="10dip" android:minHeight="10dip" android:id="@id/diskspace1"
+					android:paddingRight="5dip" android:progressDrawable="@android:drawable/progress_horizontal"></ProgressBar>
+				<TextView android:id="@id/nzbDiskspace1"
+					android:layout_height="wrap_content" android:layout_width="wrap_content"
+					android:text="" />
+
+
+			</LinearLayout>
+
+		</TableRow>
+		<!-- Disk space progress bars -->
+		<TableRow android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+			<TextView android:text="Disk 2" android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:textStyle="bold" />
+
+			<LinearLayout android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+				<ProgressBar android:id="@id/diskspace2"
+					android:layout_width="120dip" android:layout_height="10dip"
+					android:indeterminateOnly="false" android:progressDrawable="@android:drawable/progress_horizontal"
+					android:indeterminateDrawable="@android:drawable/progress_indeterminate_horizontal"
+					android:minHeight="10dip" android:maxHeight="10dip"
+					android:paddingRight="5dip" />
+				<TextView android:id="@id/nzbDiskspace2"
+					android:layout_height="wrap_content" android:layout_width="wrap_content"
+					android:text="" />
+			</LinearLayout>
+
+		</TableRow>
+
+		<!-- Warnings -->
+		<TableRow android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+			<TextView android:text="Warnings: " android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:textStyle="bold" />
+
+			<TextView android:id="@id/nzbWarnings"
+				android:layout_height="wrap_content" android:layout_width="wrap_content"
+				android:text="" />
+		</TableRow>
+	</TableLayout>
+</LinearLayout>
