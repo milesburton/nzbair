@@ -13,7 +13,7 @@ Originally a paid application (still live on the store), I'm releasing the code 
 - **Purpose:** Released to share a glimpse of Android development history and offer a learning opportunity for fellow developers.
 
 ## 🌐 Original Homepage
-For more information about the app and its original purpose, check out the [NZBAir homepage](https://www.milesburton.com/w/NZBAir_-_Usenet_and_SABnzbd_mobile_for_Android).
+For more information about the app and its original purpose, check out the [NZBAir homepage](https://www.milesburton.com/w/NZBAir_-_Usenet_and_SABnzbd_mobile_for_Android).](https://milesburton.com/wiki/nzbair_usenet_and_sabnzbd_mobile_for_android/)
 
 ## 🚀 Future Plans
 A newer version of NZBAir exists, updated to the latest Android SDK (which is significantly easier to work with now). However, I never released it publicly. 
